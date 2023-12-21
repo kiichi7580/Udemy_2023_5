@@ -1,6 +1,6 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
-enum Category {
+enum Categories {
   vegetables,
   fruit,
   meat,
@@ -14,11 +14,7 @@ enum Category {
 }
 
 class Category {
-  Category({
-    required this.name,
-    required this.color,
-  });
-  String name;
-  Color color;
-
+  const Category(this.title, this.color,);
+  final String title;
+  final Color color;
 }
